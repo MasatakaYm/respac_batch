@@ -1,3 +1,4 @@
+import os
 import sys
 import requests
 
@@ -8,10 +9,11 @@ from respac import Respac
 
 
 def fetch_pdb(pdb_name, out_dir):
+    
     target_url = 'https://files.rcsb.org/download/' + pdb_name + '.pdb'
-    print(target_url)
     req_pdb = requests.get(target_url)
 
+    os.system('mkdir -p ' + out_dir)
     pdb = open(out_dir + '/' + pdb_name + '.pdb', 'w')
     pdb.write(req_pdb.text)
     pdb.close()
