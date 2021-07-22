@@ -27,8 +27,8 @@ def main():
     # pdb_dir, out_dir, template_dir is optional arguments
     x = Respac('2igd', pdb_dir = '../pdb_protein', out_dir = '.', template_dir = '../lib/template')
 
-    # respac.py assumes $PATH to programs has already set in default.
-    # If not, you can specify path as follows:
+    # respac.py assumes $PATH to the programs has already been set.
+    # If not, you can specify path and commands as follows:
     
     # x.pqr_exe        = "path/to/pdb2pqr30 "                                         # default "pdb2pqr30 "
     # x.apbs_exe       = "path/to/APBS-3.0.0.Linux/bin/apbs "                         # default "apbs "
@@ -46,7 +46,7 @@ def main():
     x.apbs_radius_B   = 12.0   # default = 12.0 [Angstrom]
 
 
-    # Runnning all procedure
+    # Runnning all procedures
     x.run_respac()
 
 
