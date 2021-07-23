@@ -34,9 +34,9 @@ $ python3 respac.py aaa /path/to/dir_inppdb /path/to/out_results  ./lib/template
 
 ### Using respac.py from Python
 
-Because the `respac.py` is designed as class, you can invoke it from python scripts. 
+`respac.py` is designed as class, so you can invoke it from python scripts.
 ```python
-# pdb_dir, out_dir, template_dir is optional arguments
+# pdb_dir, out_dir, template_dir are optional arguments
 x = Respac('2igd', pdb_dir = './pdb_protein', out_dir = '.', template_dir = './lib/template')
 
 # You can change several conditions
@@ -50,7 +50,7 @@ x.apbs_radius_B   = 12.0   # default = 12.0 [Angstrom]
 x.run_respac()
 
 # You can invoke each step individually.
-# 0. Make direcotry for output
+# 0. Make direcotries for output
 x.init()
     
 # 1. PDB2PQR step

@@ -24,7 +24,7 @@ def main():
 
     fetch_pdb('2igd', '../pdb_protein')
 
-    # pdb_dir, out_dir, template_dir is optional arguments
+    # pdb_dir, out_dir, template_dir are optional arguments
     x = Respac('2igd', pdb_dir = '../pdb_protein', out_dir = '.', template_dir = '../lib/template')
 
     # respac.py assumes $PATH to the programs has already been set.
@@ -51,7 +51,7 @@ def main():
 
 
     # You can run individual step
-    # 0. Make direcotry
+    # 0. Make direcotries
     x.init()
     
     # 1. PDB2PQR step
