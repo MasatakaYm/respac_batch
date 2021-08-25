@@ -63,7 +63,7 @@ x.run_apbs()
 # Procedure 3: Running Surface
 x.run_surface()
 
-# Procedure 4. Running PDC
+# Procedure 4: Running PDC
 x.generate_pdc_input()
 x.run_pdc()
 ```
