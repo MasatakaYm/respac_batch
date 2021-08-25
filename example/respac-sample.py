@@ -39,9 +39,9 @@ def main():
 
     
     # You can change several conditions
-    x.ionic_strenght  = 0.15   # default = 0.15 [M]
+    x.ionic_strength  = 0.15   # default = 0.15 [M]
     x.apbs_box_margin = 20.0   # default = 20.0 [Angstrom]
-    x.grid_size       = 0.45   # default = 0.45 [Angstrom]
+    x.apbs_grid_size  = 0.45   # default = 0.45 [Angstrom]
     x.apbs_radius_A   = 3.0    # default = 3.0  [Angstrom]
     x.apbs_radius_B   = 12.0   # default = 12.0 [Angstrom]
 

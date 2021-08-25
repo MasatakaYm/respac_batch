@@ -40,9 +40,9 @@ $ python3 respac.py aaa /path/to/dir_inppdb /path/to/out_results  ./lib/template
 x = Respac('2igd', pdb_dir = './pdb_protein', out_dir = '.', template_dir = './lib/template')
 
 # You can change several conditions
-x.ionic_strenght  = 0.15   # default = 0.15 [M]
+x.ionic_strength  = 0.15   # default = 0.15 [M]
 x.apbs_box_margin = 20.0   # default = 20.0 [Angstrom]
-x.grid_size       = 0.45   # default = 0.45 [Angstrom]
+x.apbs_grid_size  = 0.45   # default = 0.45 [Angstrom]
 x.apbs_radius_A   = 3.0    # default = 3.0  [Angstrom]
 x.apbs_radius_B   = 12.0   # default = 12.0 [Angstrom]
 
@@ -50,20 +50,20 @@ x.apbs_radius_B   = 12.0   # default = 12.0 [Angstrom]
 x.run_respac()
 
 # You can invoke each step individually.
-# 0. Make direcotries for output
+# Procedure 0: Making output directories
 x.init()
     
-# 1. PDB2PQR step
+# Procedure 1: Running PDB2PQR
 x.run_pdb2pqr()
 
-# 2. APBS step
+# Procedure 2: Running APBS
 x.generate_apbs_inputs()
 x.run_apbs()
 
-# 3. Surface step
+# Procedure 3: Running Surface
 x.run_surface()
 
-# 4. PDC step
+# Procedure 4. Running PDC
 x.generate_pdc_input()
 x.run_pdc()
 ```
